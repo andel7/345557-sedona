@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Sedona</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <nav>
+      <a href="/info.html">Информация</a>
+      <a href="/media.html">Фото и видео</a>
+      <div class="logo_image_wrapper"><img src="http://placehold.it/350x150" alt="logo"></div>
+      <a href="/map.html">Карта штата</a>
+      <a href="/hotels.html">ГОСТИНИЦЫ</a>
+    </nav>
+    <section class="hero">
+      <div class="welcome"></div>
+      <div class="wellcome_paragraph"></div>
+      <div class="sedona"></div>
+      <div class="grand_canyon_sucks"></div>
+    </section>
+    <section class="reasons">
+      <h2>СЕДОНА — небольшой городок в АРИЗОНЕ,
+          зАСЛУЖИвающий большего!
+      </h2>
+      <p class="reasons_intro">
+        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+      </p>
+      <div class="real_city">
+        <h3>
+          НАСТОЯЩИЙ ГОРОДОК
+        </h3>
+        <span class="numbering">— №1 —</span>
+        <p>
+          СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+        </p>
+      </div>
+      <div class="real_city_image">
+      </div>
+      <div class="reasons_started">
+              <div class="living">
+                <img src="http://placehold.it/350x150" alt="house">
+                <h3>Жилье</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
+              <div class="food">
+                <img src="http://placehold.it/350x150" alt="burger">
+                <h3>ЕДА</h3>
+                <p>
+                  Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,Вы НЕ разочаруетесь!
+                </p>
+              </div>
+              <div class="gifts">
+                <h3>СУВЕНИРЫ</h3>
+                <p>
+                  Не только китайского, но и местного производства!
+                </p>
+              </div>
+      </div>
+      <div class="devils_bridge_img"></div>
+      <div class="reasons_continued">
+          <div class="devils_bridge">
+            <h3>ТАМ ЕСТЬ Мост дьявола</h3>
+            <span class="numbering">— №2 —</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <div class="small_square">
+            <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <span class="numbering">— №3 —</span>
+            <p>ВСЕ достопримечательности находятся очень близко</p>
+          </div>
+          <div class="tourists">
+            <h3>МАЛО ТУРИСТОВ</h3>
+            <span>— №5 —</span>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </div>
+      </div><!--end of reasons_continued-->
+    </section>
+    <section class="interested">
+      <h2>
+        ЗАИНТЕРЕСОВАЛИСЬ?
+      </h2>
+      <p>
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <div class="form_block">
+        <div class="title">
+          ПОИСК ГОСТИНИЦЫ В седоне
+        </div>
+        <form action="hotels.html">
+          <label for="checkin">Дата заезда:</label>
+          <input id="checkin" type="date"><img src="http://placehold.it/350x150" alt="calendar"><br>
+          <label for="checkout">Дата Выезда:</label>
+          <input id="checkout" type="date"><img src="http://placehold.it/350x150" alt="calendar"><br>
+          <label for="adults">ВзрослыЕ:</label><a id="decrease_adult">-</a><input id="adults" value="2"><a id="increase_adult">+</a><br>
+          <label for="children">ДетИ:</label><a id="decrease_child">-</a><input id="children" value="0"/><a id="increase_child">+</a><br>
+          <input type="submit" value="НАЙТИ"/>
+        </form>
+      </div>
+    </section>
+    <section class="map">
+      <img src="http://placehold.it/350x150" alt="Google Map">
+    </section>
+    <footer>
+      <div class="hashtag">
+        #visitSEDONA
+      </div>
+      <div class="social_links">
+        <div class="twitter">
+          <a href="twitter.com">twitter</a>
+        </div>
+        <div class="facebook">
+          <a href="facebook.com">facebook</a>
+        </div>
+        <div class="youtube">
+          <a href="youtube.com">youtube</a>
+        </div>
+      </div>
+      <div class="powered_by_html_academy">
+        <span>WEBSITE by</span>
+        <img src="http://placehold.it/350x150" alt="html academy">
+      </div>
+    </footer>
   </body>
 </html>
