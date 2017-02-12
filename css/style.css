@@ -224,8 +224,11 @@ h3 {
 }
 /* end of map */
 /* end of footer */
-.page-footer {
+.page_1  .page-footer{
   margin-top: -120px;
+}
+.page-footer {
+
   height: 120px;
   background-color: rgba(255, 255, 255, 0.8);
   display: flex;
@@ -284,4 +287,51 @@ h3 {
   width: 330px;
   margin-right: 75px;
   margin-left: auto;
+}
+/* end of hotel_search section */
+/* results section */
+.results {
+  background-color: #fff;
+}
+.sorting_control {
+  border-bottom: 1px solid #e5e5e5;
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+.sorting {
+  display: flex;
+  width: 917px;
+}
+.sorting li {
+  list-style: none;
+  justify-content: space-between;
+}
+.order {
+  width: 37px;
+  margin-right: 75px;
+  margin-left: auto;
+  overflow: hidden;
+}
+.found {
+  margin-left: 75px;
+  width: 135px;
+  color:#000;
+}
+.search_result_item {
+  height: 150px;
+}
+.item_photo {
+  display: inline-block;
+  margin-top:30px;
+  margin-bottom:30px;
+  margin-right: 30px;
+  margin-left: 75px;
+}
+.hotel_details {
+  display: inline-block;
+}
+.hotel_name a {
+  text-decoration: none;
+  color:#000;
 }
