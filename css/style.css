@@ -1,3 +1,9 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-size:14px;
     line-height:21px;
@@ -5,17 +11,277 @@ body {
     font-weight: normal;
     font-family: 'PT Sans',Arial,sans-serif;
     text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
 }
 h1 {
     font-size:21px;
     line-height:26px;
     color: #000000;
-    font-weight: bold;   
-     
+    font-weight: bold;
+
 }
 h3 {
     color:#ffffff;
     font-size:21px;
     line-height:26px;
-    font-weight: bold;   
+    font-weight: bold;
+}
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0px 5px 15px #e4e4e4, 0px 5px 15px #e4e4e4;
+}
+/* page_header  */
+.page_header {
+  background-color: #fff;
+}
+.page-navigation {
+}
+.nav_links {
+  height: 60px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+.nav_links a {
+  text-decoration: none;
+  color: #000;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+.logo_image_wrapper {
+  position: absolute;
+  top:0;
+  display: inline-block;
+  right:45vw;
+}
+/* end of page_header */
+/* hero section */
+.hero {
+    background: url('../img/background_photo.jpg') no-repeat;
+    height: 510px;
+    width: auto;
+    text-align: center;
+    padding-top:75px;
+    background-size: cover;
+    margin: 0;
+}
+/* end of hero section */
+/* reasons section */
+.reasons::before {
+  content: "";
+  height: 55px;
+  margin-top: -55px;
+  background: url('../img/background_bottom_cover.png') no-repeat;
+  display: block;
+}
+
+.reasons header {
+  height: 245px;
+  background: #fff;
+  padding-top: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.reasons_intro {
+  margin-top: 40px;
+}
+.wrapper {
+  display: flex;
+  height: 255px;
+}
+.devils_bridge p, .real_city  p{
+  text-transform: uppercase;
+}
+.devils_bridge , .real_city {
+  height: 255px;
+  width: 400px;
+  background-color: #81b3d2;
+  color: #fff;
+  text-align: center;
+  padding-top: 58px;
+  padding-left:60px;
+  padding-right:60px;
+}
+.devils_bridge h3, .real_city h3 {
+  margin: 0;
+}
+.numbering {
+  color: #fff;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+.devil_bridge_img img, .real_city_image img{
+  width: 100%;
+  height: 100%;
+}
+.reasons_started {
+  height: 330px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+}
+
+.reasons_continued li, .reasons_started li {
+  width: 400px;
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.reasons_continued li b, .reasons_started li b {
+  display: block;
+  margin-top:30px;
+}
+
+.reasons_ended {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+.reasons_ended li {
+  width: 400px;
+  text-align: center;
+  list-style: none;
+  height: 255px;
+  padding: 0px;
+  padding-top:50px;
+  background-color: #eeeeee;
+}
+
+.reasons_ended li p,.reasons_ended li .numbering {
+  text-transform: uppercase;
+  color:#333333;
+  padding-left:30px;
+  padding-right:30px;
+}
+/* end of reasons section */
+/* interested section */
+.interested {
+  padding: 60px;
+  margin: 0px;
+  height: 290px;
+  text-align: center;
+  background-color: #fff;
+}
+.interested h2 {
+  margin-bottom: 35px;
+}
+.interested p {
+  text-transform: uppercase;
+}
+.form_block {
+  margin-top: 50px;
+  text-transform: uppercase;
+  height: 480px;
+  width: 570px;
+  display: inline-block;
+  background-color: #fff;
+}
+.title {
+  background-color: #766357;
+  color: #fff;
+  height: 82px;
+  padding-top: 35px;
+}
+.search_form {
+  padding-top: 55px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search_form p {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.search_form p label {
+  width: 100px;
+  text-align: left;
+}
+.search_form p .checkin, .search_form p .checkout {
+  width: 350px;
+}
+.submit {
+  width: 100%;
+}
+/* end of interested section */
+/* map */
+.map {
+  height: 590px;
+}
+.map img {
+  z-index: -1;
+  position: absolute;
+}
+/* end of map */
+/* end of footer */
+.page-footer {
+  margin-top: -120px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding-left:130px;
+  padding-right: 100px;
+  align-items: center;
+  text-transform: uppercase;
+}
+.page-footer ul {
+  display: flex;
+}
+.page-footer ul li {
+  list-style: none;
+
+}
+.page-footer ul li a {
+  text-decoration: none;
+}
+/* end of footer */
+
+
+/* hotels page */
+
+
+/* hotel_search */
+.hotel_search {
+  height: 220px;
+  background: url('../img/filter background.jpg') no-repeat;
+}
+.hotel_search form {
+  display: flex;
+  align-items: stretch;
+  padding-top: 30px;
+  color: #fff;
+}
+.hotel_search form fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.hotel_search form fieldset input {
+  width: 25px;
+}
+.hotel_search form fieldset label {
+  width: 70px;
+}
+.infrastructure {
+  margin-left: 75px;
+  width: 240px;
+}
+.type_of_rent {
+  width: 290px;
+}
+.price_range_filter {
+  width: 330px;
+  margin-right: 75px;
+  margin-left: auto;
 }

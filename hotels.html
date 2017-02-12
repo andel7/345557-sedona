@@ -6,61 +6,62 @@
     <title>Sedona</title>
   </head>
   <body>
+    <div class="container">
       <header class="page_header">
             <nav class="page-navigation">
-              <div class="logo_image_wrapper"><img src="img/logo.png" alt="logo"></div>    
-              <ul>
-                <li><a href="/info.html">Информация</a></li>
-                <li><a href="/media.html">Фото и видео</a></li>                
-                <li><a href="/map.html">Карта штата</a></li>
-                <li><a href="/hotels.html">ГОСТИНИЦЫ</a></li>
-              </ul>      
-            </nav>            
+              <div class="logo_image_wrapper"><img src="img/logo.png" alt="logo"></div>
+              <div class="nav_links">
+                <div><a href="info.html">Информация</a></div>
+                <div><a href="media.html">Фото и видео</a></div>
+                <div><a href="map.html">Карта штата</a></div>
+                <div><a href="hotels.html">ГОСТИНИЦЫ</a></div>
+              </div>
+            </nav>
       </header>
-    <form action="https://htmlacademy.html" class="checkbox_filters">
-	    <fieldset class="infrastructure">
-				<legend>ИНФРАСТРУКТУРА:</legend>
-				<input id="swimming_pool" type="checkbox" name="swimming_pool" checked><label for="swimming_pool">Бассейн</label>
-				<input id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label>
-				<input id="wifi" type="checkbox" name="wifi"><label for="wifi">wifi</label>
-	    </fieldset>	    
-	    <fieldset class="type_of_rent">		
-				<legend>Тип жилья:</legend>    
-	    	<input id="hotel" type="checkbox" name="hotel" checked>	<label for="hotel">Гостиница</label>
-	    	<input id="motel" type="checkbox" name="motel" checked><label for="motel">Мотель</label>
-	    	<input id="appartment" type="checkbox" name="appartment" checked><label for="appartment">Апартаменты</label>
-	    </fieldset>
-			<fieldset>
-						<div class="price_range_filter">
-							<legend>Стоимость в сутки (Р):</legend>
-							<div id="from_till_box">
-								<span class="from">от 0</span>
-								<span class="till">до 3000</span>	    		
-							</div>
-							<div class="price_range"></div>
-					  </div>
-			</fieldset>
-			<a href="https://htmlacademy.ru" title="submit form">ПОКАЗАТЬ</a>
-    </form>
+      <section class="hotel_search">
+        <form action="https://htmlacademy.html" class="checkbox_filters">
+    	    <fieldset class="infrastructure">
+    				<legend>ИНФРАСТРУКТУРА:</legend>
+    				<input id="swimming_pool" type="checkbox" name="swimming_pool" checked><label for="swimming_pool">Бассейн</label>
+    				<input id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label>
+    				<input id="wifi" type="checkbox" name="wifi"><label for="wifi">wifi</label>
+    	    </fieldset>
+    	    <fieldset class="type_of_rent">
+    				<legend>Тип жилья:</legend>
+    	    	<input id="hotel" type="checkbox" name="hotel" checked>	<label for="hotel">Гостиница</label>
+    	    	<input id="motel" type="checkbox" name="motel" checked><label for="motel">Мотель</label>
+    	    	<input id="appartment" type="checkbox" name="appartment" checked><label for="appartment">Апартаменты</label>
+    	    </fieldset>
+    			<fieldset class="price_range_filter">    						
+    							<legend>Стоимость в сутки (Р):</legend>
+    							<div id="from_till_box">
+    								<span class="from">от 0</span>
+    								<span class="till">до 3000</span>
+    							</div>
+    							<div class="price_range"></div>
+                <a href="https://htmlacademy.ru" title="submit form">ПОКАЗАТЬ</a>
+    			</fieldset>
+        </form>
+      </section>
 				<section class="results">
 					<h3 class="found">Найдено:<span>3</span></h3>
 					<ul class="sorting">
 						<li>
 							<h4>Сортировка:</h4>
-							<li>	
+							<li>
 								<a class="sort_type active">по цене</a>
 							</li>
 							<li>
 								<a class="sort_type">по типу</a>
 							</li>
 							<li>
-								<a class="sort_type">по рейтингу</a>	
-							</li>	
+								<a class="sort_type">по рейтингу</a>
+							</li>
 						</li>
 						<div class="order">
 							<a class="ascending" title="ascending">ascending</a>
 							<a class="descending active" title="descending">descending</a>
-						</div>		
+						</div>
 					</ul>
 					<div class="search_result_item">
 						<div class="item_photo">
@@ -141,7 +142,7 @@
 									</div>
 						 </div>	<!-- end of hotel details -->
 						</div><!--end of hotel result -->
-				</section>	
+				</section>
             <footer class="page-footer">
               <div class="hashtag">
                 #visitSEDONA
@@ -162,5 +163,6 @@
                 <a title="html academy" href="http://www.htmlacademy.ru"><img src="img/html_academy.png" alt="html academy"></a>
               </div>
             </footer>
+      </div><!--end of container -->
   </body>
 </html>
