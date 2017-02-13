@@ -40,6 +40,9 @@ h3 {
 }
 .page-navigation {
 }
+.nav_links li {
+  list-style: none;
+}
 .nav_links {
   height: 60px;
   align-items: center;
