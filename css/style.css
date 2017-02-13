@@ -304,10 +304,11 @@ h3 {
   width: 917px;
 }
 .sorting li {
+  width: 88px;
   list-style: none;
-  justify-content: space-between;
+
 }
-.order {
+.sorting li:last-child {
   width: 37px;
   margin-right: 75px;
   margin-left: auto;
@@ -320,18 +321,18 @@ h3 {
 }
 .search_result_item {
   height: 150px;
-}
-.item_photo {
-  display: inline-block;
-  margin-top:30px;
-  margin-bottom:30px;
-  margin-right: 30px;
-  margin-left: 75px;
+  display: flex;
+  align-items: center;
+  padding-left: 75px;
+  padding-right: 75px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .hotel_details {
-  display: inline-block;
+  margin-left: 30px;
+  width: 365px;
 }
-.hotel_name a {
-  text-decoration: none;
-  color:#000;
+
+.raiting {
+  width: 110px;
+  margin-left: auto;
 }
