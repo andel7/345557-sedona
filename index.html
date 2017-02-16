@@ -18,12 +18,13 @@
               </ul>
             </nav>
       </header>
+      <main class="page-content">
       <section class="hero">
         <img src="img/intro_text.png" alt="Welcome to the gorgeous Sedona">
       </section>
       <section class="reasons">
         <header>
-            <h1 class="main_intro">СЕДОНА — небольшой городок в АРИЗОНЕ,<br>
+            <h1 class="main_intro">СЕДОНА — небольшой городок в АРИЗОНЕ,
                 зАСЛУЖИвающий большего!
             </h1>
             <p class="reasons_intro">
@@ -33,7 +34,7 @@
         <div class="wrapper">
             <div class="real_city">
               <h3>
-                НАСТОЯЩИЙ <br>ГОРОДОК
+                НАСТОЯЩИЙ ГОРОДОК
               </h3>
               <div class="numbering">— №1 —</div>
               <p>
@@ -46,22 +47,20 @@
         </div><!-- end of wrapper -->
         <ul class="reasons_started">
               <li>
-                <img src="img/house.png" alt="house image">
+
                 <b>Жилье</b>
-                <p>Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li>
-                <img src="img/burger.png" alt="burger image">
                 <b>ЕДА</b>
                 <p>
-                  Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>Вы НЕ разочаруетесь!
+                  Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,Вы НЕ разочаруетесь!
                 </p>
               </li>
               <li>
-                <img src="img/gift.png" alt="gift image">
                 <b>СУВЕНИРЫ</b>
                 <p>
-                  Не только китайского, но и местного<br> производства!
+                  Не только китайского, но и местного производства!
                 </p>
               </li>
         </ul><!-- end of reasons_started -->
@@ -81,66 +80,70 @@
             <li class="small_square">
               <b>НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
               <div class="numbering">— №3 —</div>
-              <p>ВСЕ достопримечательности<br> находятся очень близко</p>
+              <p>ВСЕ достопримечательности находятся очень близко</p>
             </li>
             <li class="small_square">
               <b>КРАСИВАЯ ДОРОГА</b>
               <div class="numbering">— №4 —</div>
-              <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br> НЕ СКУЧНО!</p>
+              <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
             </li>
-            <li class="tourists">
+            <li class="small_square">
               <b>МАЛО ТУРИСТОВ</b>
               <div class="numbering">— №5 —</div>
-              <p>Большинство едет в гранд каньон и<br> толпится там</p>
+              <p>Большинство едет в гранд каньон и толпится там</p>
             </li>
         </ul>
       </section><!-- end of section reasons -->
       <section class="interested">
-        <h2>
+        <b>
           ЗАИНТЕРЕСОВАЛИСЬ?
-        </h2>
+        </b>
         <p>
-          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <div class="form_block">
           <div class="title">
             ПОИСК ГОСТИНИЦЫ В седоне
           </div>
-          <form class="search_form" action="/hotels.html">
+          <form class="search_form" action="/hotels.html" method="POST">
             <p>
               <label for="checkin">Дата заезда:</label>
-              <input class="checkin" type="date"><span class="calendar_imaage"></span>
+              <input id="checkin" name="checkin" type="text" value="24 Апреля 2017"><span class="calendar_image"></span>
+            </p>
+            <p>
               <label for="checkout">Дата Выезда:</label>
-              <input class="checkout" type="date"><span class="calendar_imaage"></span>
+              <input id="checkout" name="checkout" type="text" value="4 июля 2017"><span class="calendar_image"></span>
+            </p>
+            <p>
               <label for="adults">ВзрослыЕ:</label><button id="decrease_adult">-</button><input id="adults" value="2"><button id="increase_adult">+</button>
               <label for="children">ДетИ:</label><button id="decrease_child">-</button><input id="children" value="0"/><button id="increase_child">+</button>
-              <input class="submit" type="submit" value="НАЙТИ"/>
             </p>
+            <input class="submit" type="submit" value="НАЙТИ"/>
           </form>
         </div><!--end of form_block-->
       </section><!-- end of intersted -->
-      <section class="map">
-        <img src="img/map.png" alt="Google Map">
-      </section>
+      <aside class="map">
+      </aside>
       <footer class="page-footer">
         <div class="hashtag">
           <span>#visitSEDONA</span>
         </div>
         <ul class="social_links">
-          <li class="twitter">
-            <a href="twitter.com">twitter</a>
+          <li>
+            <a class="twitter" href="twitter.com">twitter</a>
           </li>
-          <li class="facebook">
-            <a href="facebook.com">facebook</a>
+          <li>
+            <a class="facebook" href="facebook.com">facebook</a>
           </li>
-          <li class="youtube">
-            <a href="youtube.com">youtube</a>
+          <li>
+            <a  class="youtube" href="youtube.com">youtube</a>
           </li>
         </ul>
         <div class="powered_by_html_academy">
           <span>WEBSITE by</span>
           <a title="html academy" href="http://www.htmlacademy.ru"><img src="img/html_academy.png" alt="html academy"></a>
         </div>
+      </main>
       </footer>
         </div><!--end of container -->
   </body>
