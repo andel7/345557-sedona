@@ -220,12 +220,32 @@ h3 {
 .search_form p label {
   width: 100px;
   text-align: left;
+  line-height: 40px;
 }
 .search_form p .checkin, .search_form p .checkout {
   width: 350px;
 }
+.search_form p {
+  margin-bottom: 30px;
+}
+#checkin, #checkout {
+  width: 340px;
+  padding-left: 15px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: url('../img/calendar.png') no-repeat 97% center;
+  background-color: #f2f2f2;
+}
+#adults, #children {
+  width: 15px;
+}
 .submit {
+  border: none;
+  background-color: #81b3d2;
   width: 100%;
+  color:#fff;
+  height: 58px;
 }
 /* end of interested section */
 /* map */
@@ -273,6 +293,19 @@ h3 {
   display: inline-block;
   width: 45px;
   height: 45px;
+}
+
+.youtube {
+ background:url('../img/social_sprite.png') no-repeat;
+ background-position: 13px -108px;
+}
+.twitter {
+ background:url('../img/social_sprite.png') no-repeat;
+ background-position: 14px -47px;
+}
+.facebook {
+ background:url('../img/social_sprite.png') no-repeat;
+ background-position: 17px 15px;
 }
 /* end of footer */
 
@@ -346,9 +379,10 @@ h3 {
   color:#000;
 }
 .search_result_item {
+  padding-top: 30px;
   height: 150px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 75px;
   padding-right: 75px;
   border-bottom: 1px solid #e5e5e5;
@@ -357,20 +391,44 @@ h3 {
   margin-left: 30px;
   width: 365px;
 }
+.hotel_details h2 {
+  margin-bottom: 15px;
+}
+.hotel_details h2 a{
+  text-decoration: none;
+  color:#000;
+}
 
 .raiting {
   width: 110px;
   margin-left: auto;
 }
-.youtube {
-  background:url('../img/social_sprite.png') no-repeat;
-  background-position: 13px -112px;
+
+.action_buttons {
+  margin-top:20px;
 }
-.twitter {
-  background:url('../img/social_sprite.png') no-repeat;
-  background-position: 16px -54px;
+.action_buttons a{
+  text-decoration: none;
+  color:#fff;
+  height: 27px;
+  padding-left:18px;
+  padding-right:18px;
+  padding-top:8px;
+  padding-bottom:8px;
 }
-.facebook {
-  background:url('../img/social_sprite.png') no-repeat;
-  background-position: 16px 8px;
+.action_buttons a:nth-child(1){
+  background-color:#81b3d2;
+}
+.action_buttons a:nth-child(2){
+  background-color:#766357;
+}
+.stars {
+  color: #81b3d2;
+  letter-spacing: 6px;
+}
+.score{
+  background-color: #f2f2f2;
+  margin-top: 47px;
+  line-height: 28px;
+  text-align: center;
 }
