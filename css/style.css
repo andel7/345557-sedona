@@ -429,10 +429,17 @@ input[type='checkbox'] {
 }
 .sorting li:last-child {
   width: 37px;
-  margin-right: 75px;
   margin-left: auto;
   overflow: hidden;
-  font-size: 0px;
+  text-align: right;
+
+}
+.sorting li:last-child a {
+  text-decoration: none;
+  color:#cccccc;
+}
+.sorting li:last-child a.active {
+  color: #81b3d2;
 }
 .found {
   margin-left: 75px;
@@ -484,6 +491,7 @@ input[type='checkbox'] {
   background-color:#766357;
 }
 .stars {
+  text-align: right;
   color: #81b3d2;
   letter-spacing: 6px;
 }
